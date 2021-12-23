@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Uslugi kosmetyczne</title>
+    <link rel="stylesheet" href="styl.css" />
+</head>
+
+<body>
+    <div id="lewa">
+        <section id="gora1">
+            <h2>W ofercie</h2>
+            <ul>
+                <li><a href="twarz.html">Zabiegi na twarz</a>
+                    <ol>
+                        <li>Piling</li>
+                        <li>Maska</li>
+                        <li>Regulacja brwi</li>
+                    </ol>
+                </li>
+                <li>Masaz</li>
+                <li>Diety oczyszczajace</li>
+            </ul>
+            <a href="index.html">Do strony glownej</a>
+        </section>
+        <section id="dol1">
+            <img src="obraz1.jpg" alt="Kosmetyczkaa" />
+        </section>
+    </div>
+    <div id="prawa">
+        <section id="gora2">
+            <h2>Salon kosmetyczny</h2>
+        </section>
+        <section id="dol2">
+            <h2>Sprawdz cene swojej wizyty</h2>
+                <input type="checkbox" name="a" id="p" /> Piling<br />
+                <input type="checkbox" name="a" id="m" /> Maska<br />
+                <input type="checkbox" name="a" id="mt" /> Masaz twarzy<br />
+                <input type="checkbox" name="a" id="rb" /> Regulacja brwi<br />
+                <input type="submit" onclick=oblicz() id="guzior" value="Sprawdz cene" />
+                <div id="wynik"></div>
+        </section>
+        <script>
+            function oblicz() {
+                var a = document.getElementsByName("a"); //lokalizujemy elementy o nazwie "a"
+
+                var p = document.getElementById("p"); //lokalizujemy checkboxy
+                var m = document.getElementById("m"); 
+                var mt = document.getElementById("mt");
+                var rb = document.getElementById("rb");
+
+                var suma = 0; //inicjalizujemy zmienna suma
+
+                if(p.checked == true) suma+= 45; //jesli jest checked to dodajemy do zmiennej suma te wartosci
+                if(m.checked == true) suma+= 30;
+                if(mt.checked == true) suma+= 20;
+                if(rb.checked == true) suma+= 5;
+
+                document.getElementById("wynik").innerHTML = "Cena zabiegów to: " + suma; //printuje zmienna suma
+            }
+        </script>
+    </div>
+    <section id="stopka">
+        <p>Autor: 92183091232</p>
+    </section>
+</body>
+
+</html>
