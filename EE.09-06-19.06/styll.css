@@ -1,0 +1,49 @@
+body {
+    font-family: "Times New Roman";
+}
+
+#baner1, #baner2, #baner3, #stopka1, #stopka2, #stopka3{
+    background-color: RGB(160,82,44);
+    color: white;
+    height: 150px;
+}
+
+#baner1, #stopka1{
+    width: 40%;
+    float: left;
+}
+
+#baner2, #stopka2{
+    width: 50%;
+    font-size: 150%;
+    float: left;
+
+}
+
+#baner3, #stopka3{
+    width: 10%;
+    text-align: center;
+    float: left;
+
+}
+
+#main {
+    background-color: #d1b48c;
+    padding: 100px;
+}
+
+form {
+    padding-top: 100px;
+}
+
+a {
+    border: 1px dashed Sienna;
+    background-color: Tan;
+    color: Sienna;
+    padding: 40px;
+    line-height: 150px;
+}
+
+li{
+    list-style-type: upper-roman;
+}

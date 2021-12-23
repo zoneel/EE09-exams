@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="styll.css"/>
+    <title>Pogotowie Ratunkowe</title>
+</head>
+<body>
+    <section id="baner1">
+        <img src="obraz.jpg" alt="pogotowie"/>
+    </section>
+    <section id="baner2">
+        <img src="anim.gif"/>
+    </section>
+    <section id="baner3">
+        <p>Kontakt:<br> 000 111 22 333</p>
+    </section>
+
+    <section id="main">
+        <form method="POST" action="zgloszenie.php">
+            <h2>Dodaj nowe zgloszenie</h2>
+            Numer zespołu ratowniczego: <br/>
+            <input type="number" name="ratownik"/><br/>
+            Numer zespołu dyspozytora: <br/>
+            <input type="number" name="dyspozytor"/><br/>
+            Adres: <br/>
+            <input type="text" size="100" name="adres"/><br/>
+            <input type="reset" value="WYCZYŚĆ"/>
+            <input type="submit" value="ZGŁOŚ"/>
+        </form>
+    </section>
+
+    <section id="stopka1">
+        <h4>Numery alarmowe</h4>
+        <ol>
+            <li>999</li>
+            <li>112</li>
+        </ol>
+    </section>
+    <section id="stopka2">
+        <a href="kwerendy.txt">Pobierz kwerendy</a>
+    </section>
+    <section id="stopka3">
+        <p>Autor<br/> zonel</p>
+    </section>
+
+</body>
+</html>

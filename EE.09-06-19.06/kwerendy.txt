@@ -1,0 +1,4 @@
+Zapytanie 1: INSERT INTO zgloszenia (ratownicy_id, dyspozytorzy_id, adres, pilne, czas_zgloszenia) VALUES (2,3,"Jaworzno, Inwalidów Wojennych 16","1", CURRENT_TIME);
+Zapytanie 2: SELECT adres, dyspozytorzy_id FROM zgloszenia WHERE ratownicy_id = "3";
+Zapytanie 3: CREATE USER maria IDENTIFIED BY "Maria3!";
+Zapytanie 4: GRANT INSERT, UPDATE, SELECT ON zgloszenia TO maria;
