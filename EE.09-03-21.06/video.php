@@ -67,7 +67,7 @@
         <form method="POST" action="">
             Usun film nr.: <input type="number" name="numer"/><br/>
             <input type="submit" name="guzior"/><br/>
-            Stronę wykonał: <a href="ja@poczta.com">21938129031</a>
+            Stronę wykonał: <a href="ja@poczta.com">zonel</a>
         </form>
 
         <?php
