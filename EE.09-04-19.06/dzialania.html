@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Dzialania matematyczne</title>
+        <link rel="stylesheet" href="styl.css" />
+    </head>
+    <body>
+        <section id="pierwszy">
+            <img src="logo.jpg" alt="matematyka" />
+        </section>
+        <section id="drugi">
+            <h1>Pomocnik matematyczny</h1>
+        </section>
+        <section id="trzeci">
+            <a href="dzialania.html"><h4>Działania</h4></a>
+        </section>
+        <section id="czwarty">
+            <a href="mnozenie.html"><h4>Tabliczka mnozenia</h4></a>
+        </section>
+
+        <section id="lewy">
+            <h3>Proste działania</h3>
+            liczba A: <input type="text" id="aa" /><br />
+            liczba B: <input type="text" id="bb" /><br />
+
+            <input  class="guzior" type="button" value="+" onclick=dodawanie() />
+            <input class="guzior" type="button" value="-" onclick=odejmowanie() />
+            <input class="guzior" type="button" value="*" onclick=mnozenie() />
+            <input class="guzior" type="button" value="/" onclick=dzielenie() />
+
+            <p id="wynik"></p>
+        </section>
+        <section id="prawy">
+            <ul>
+                <li>dodawanie</li>
+                <li>odejmowanie</li>
+                <li>mnozenie</li>
+                <li>dzielenie</li>
+            </ul>
+        </section>
+
+        <script>
+            var a = document.getElementById("aa");
+            var b = document.getElementById("bb");
+            var wynik = document.getElementById("wynik");
+
+            function dodawanie(){
+                $wynik = parseInt(a.value) + parseInt(b.value);
+                wynik.innerHTML = "Wynik to: "+$wynik;
+            }
+
+            function odejmowanie(){
+                $wynik = parseInt(a.value) - parseInt(b.value);
+                wynik.innerHTML = "Wynik to: "+$wynik;
+            }
+
+            function mnozenie(){
+                $wynik = parseInt(a.value) * parseInt(b.value);
+                wynik.innerHTML = "Wynik to: "+$wynik;
+            }
+
+            function dzielenie(){
+                $wynik = parseInt(a.value) / parseInt(b.value);
+                wynik.innerHTML = "Wynik to: "+$wynik;
+            }
+
+        </script>
+
+        <section id="stopka">
+            <p>Autor: zonel</p>
+        </section>
+    </body>
+</html>
