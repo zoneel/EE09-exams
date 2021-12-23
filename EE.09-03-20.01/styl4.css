@@ -1,0 +1,55 @@
+body {
+    font-family: Garamond;
+}
+
+#blewy, #bprawy {
+    background-color: RGB(95,158,160);
+    color: yellow;
+    width: 20%;
+    height: 90px;
+    text-align: right;
+    float: left;
+}
+
+#bsrod{
+    background-color: RGB(95,158,160);
+    color: yellow;
+    width: 60%;
+    height: 90px;
+    text-align: right;
+    float: left
+}
+
+#lewy, #prawy {
+    background-color: RGB(175,238,238);
+    width: 50%;
+    height: 250px;
+    float: left;
+}
+
+#glowny {
+    background-color: RGB(95,158,160);
+    padding: 30px;
+}
+
+#stopka {
+    background-color: RGB(175,238,238);
+    padding: 10px;
+    clear: both;
+}
+
+table {
+    border: 2px dotted green;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    border: 2px dotted green;
+}
+
+th {
+    border: 2px dotted green;
+    background-color: green;
+    color: yellow;
+}
