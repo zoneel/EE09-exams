@@ -1,0 +1,5 @@
+Zapytanie 1: SELECT id, nazwa, wystepowanie FROM ryby WHERE styl_zycia = 2;
+Zapytanie 2: SELECT ryby.nazwa FROM ryby JOIN okres_ochronny WHERE ryby.id = okres_ochronny.Ryby_id AND okres_ochronny.od_miesiaca = 0 AND okres_ochronny.do_miesiaca = 0;
+
+Zapytanie 3: SELECT ryby.nazwa FROM ryby JOIN okres_ochronny WHERE ryby.id = okres_ochronny.Ryby_id AND okres_ochronny.od_miesiaca = 0 AND okres_ochronny.do_miesiaca = 0;
+Zapytanie 4: CREATE TABLE wedkarze(id INT NOT NULL PRIMARY KEY AUTO_INCREMENT, imie TEXT, nazwisko TEXT, punkty INT);
