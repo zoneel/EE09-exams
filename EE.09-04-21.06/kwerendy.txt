@@ -1,0 +1,4 @@
+Zapytanie 1: SELECT id, imie, nazwisko, rok_urodzenia, zdjecie FROM osoby WHERE id < "31";
+Zapytanie 2: SELECT osoby.id, osoby.imie, osoby.nazwisko, osoby.rok_urodzenia, osoby.opis, osoby.zdjecie, hobby.nazwa FROM osoby JOIN hobby WHERE osoby.Hobby_id = hobby.id AND osoby.id = 10;
+Zapytanie 3: SELECT AVG(rok_urodzenia), MIN(rok_urodzenia), MAX(rok_urodzenia) FROM osoby;
+Zapytanie 4: UPDATE osoby SET opis = "sranie" WHERE Hobby_id = 4;
