@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Ciągi liczbowe</title>
+    <link rel="stylesheet" href="styl2.css" />
+</head>
+
+<body>
+    <section id="baner1">
+        <h2>Poznaj Ciągi Liczbowe</h2>
+    </section>
+    <section id="baner2">
+        <a href="liczby.html">
+            <h5>Ciągi arytmetyczne</h5>
+        </a>
+    </section>
+    <section id="baner3">
+        <a href="fib.html">
+            <h5>Ciągi Fibonacciego</h5>
+        </a>
+
+    </section>
+    <section id="baner4">
+        <img src="obraz1.png" alt="Fibonacci" />
+    </section>
+
+    <section id="lewy">
+        <ol>
+            <li>ciągi arytmetyczne</li>
+            <li>ciągi geometryczne</li>
+            <li>ciąg Fibonacciego</li>
+        </ol>
+    </section>
+    <section id="prawy">
+        <h2>Generowanie ciągu arytmetycznego</h2>
+        Pierwszy wyraz A1: <input type="number" id="pier" /><br />
+        Różnica ciągu R: <input type="number" id="roz" /><br />
+        Liczba wyrazów w ciągu N: <input type="number" id="liczb" /><br />
+        <input type="submit" value="Generuj Ciąg" onclick=oblicz() />
+        <p id="output"></p>
+    </section>
+
+    <script>
+        var p = document.getElementById("pier");
+        var r = document.getElementById("roz");
+        var ile = document.getElementById("liczb");
+        var out = document.getElementById("output");
+
+
+        function oblicz() {
+            console.log("łapie");
+            console.log(ile);
+            var i = 1;
+            out.innerHTML = "Ciąg Arytmetyczny zawiera: ";
+            while (ile.value >= i) {
+                var wyraz = parseInt(p.value) + (i - 1) * parseInt(r.value);
+                out.innerHTML += wyraz + ", ";
+                i++;
+            }
+        }
+    </script>
+
+    <section id="stopka">
+        <p>Autor: zonel</p>
+    </section>
+
+</body>
+
+</html>
